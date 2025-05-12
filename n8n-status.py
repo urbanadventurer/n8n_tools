@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-n8n CLI Workflow Status Script v0.1
+n8n CLI Workflow Status Script v0.1.0
 Andrew Horton
 
 https://github.com/urbanadventurer/n8n_tools
@@ -562,7 +562,7 @@ def main():
     # Load configuration
     config = load_config()
     
-    parser = argparse.ArgumentParser(description='n8n workflow execution status viewer for SQLite v0.1')
+    parser = argparse.ArgumentParser(description='n8n workflow execution status viewer for SQLite v0.1.0')
     parser.add_argument('--db-path', type=str, 
                       help='Path to SQLite database file')
     parser.add_argument('--limit', type=int, default=config['limit'], 
