@@ -1,6 +1,12 @@
 # n8n Status Script
 
+![GitHub release](https://img.shields.io/github/v/release/urbanadventurer/n8n-status)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![GitHub stars](https://img.shields.io/github/stars/urbanadventurer/n8n-status)
+
 A command-line utility for monitoring n8n workflow executions.
+
+![Screenshot](https://github.com/user-attachments/assets/9a2f7b78-457d-4d02-804c-bbbb53846920)
 
 ## Overview
 
@@ -8,20 +14,20 @@ This script provides a convenient way to view the status and statistics of your 
 
 Postgres is not currently supported.
 
-## Features
+## ✨ Features
 
 - View recent workflow executions with detailed status information
 - See execution times, workflow names, and current status
 - Color-coded output for easy status identification
 - Filter by number of executions to display
 
-## Requirements
+## 📋 Requirements
 
 - Python 3.6+
 - SQLite3 (included in Python standard library)
 - An n8n instance with its SQLite database file
 
-## Installation
+## 🚀 Installation
 
 No installation is required. Simply download the script and run it with Python.
 
@@ -34,7 +40,7 @@ cd n8n-status
 chmod +x n8n-status.py
 ```
 
-## Configuration
+## ⚙️ Configuration
 
 The script now supports configuration via an INI file. Create a `.n8n-status-config.ini` file in either:
 - The current directory where you run the script
@@ -53,7 +59,7 @@ limit = 15
 
 The configuration uses Python's built-in `configparser` module, so no external dependencies are required.
 
-## Usage
+## 💻 Usage
 
 ```bash
 # Basic usage (will use config file if available)
