@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-n8n CLI Workflow Status Script
+n8n CLI Workflow Status Script v0.1
 Andrew Horton
 
 https://github.com/urbanadventurer/n8n_tools
@@ -562,7 +562,7 @@ def main():
     # Load configuration
     config = load_config()
     
-    parser = argparse.ArgumentParser(description='n8n workflow execution status viewer for SQLite')
+    parser = argparse.ArgumentParser(description='n8n workflow execution status viewer for SQLite v0.1')
     parser.add_argument('--db-path', type=str, 
                       help='Path to SQLite database file')
     parser.add_argument('--limit', type=int, default=config['limit'], 
@@ -619,7 +619,8 @@ def main():
     # Exit if no database path found or it doesn't exist
     if not db_path or not Path(db_path).exists():
         print(f"Error: SQLite database file not found{' at ' + db_path if db_path else '.'}")
-        print("Please specify a valid database path with --db-path.")
+        print("Please specify a valid database path with --db-path.\n")
+        parser.print_help()
         sys.exit(1)
 
     db = SqliteConnector(db_path)
