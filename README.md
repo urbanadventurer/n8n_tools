@@ -1,8 +1,8 @@
 # n8n Status Script
 
-![GitHub release](https://img.shields.io/github/v/release/urbanadventurer/n8n-status)
+![GitHub release](https://img.shields.io/github/v/release/urbanadventurer/n8n_tools)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![GitHub stars](https://img.shields.io/github/stars/urbanadventurer/n8n-status)
+![GitHub stars](https://img.shields.io/github/stars/urbanadventurer/n8n_tools)
 
 A command-line utility for monitoring n8n workflow executions.
 
